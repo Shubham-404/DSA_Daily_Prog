@@ -1,8 +1,8 @@
 ## DSA_Daily_Prog   
-##Here, I am going to post daily about   
-##1. What topic i learn   
-##2. Name + Description(if needed) of the problem I solve to keep track and kinda revision as well.  
-##3. Follow the suggestion given by ChatGPT:  
+Here, I am going to post daily about   
+1. What topic i learn   
+2. Name + Description(if needed) of the problem I solve to keep track and kinda revision as well.  
+3. Follow the suggestion given by ChatGPT:  
  --------------------------------------------------------------------------------------
    "🔹 Your Streak Idea
 Flexing a streak is fine—but let it reflect real learning:
