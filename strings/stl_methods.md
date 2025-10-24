@@ -1,0 +1,4 @@
+- str.find('substring') -> first pos. of first occurence, invalid answer if does not exist.
+- to check => if(str.find(substring) < str.length()){}
+- str.erase(start, length) -> delete a substring.
+- 
