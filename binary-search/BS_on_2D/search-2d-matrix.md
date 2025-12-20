@@ -14,9 +14,8 @@ Applying binary search, while traversing.
 what i came up with is linear search in rows and binary search in cols, not the best way but it worked.
 
 ```cpp
-class Solution {
-public:
-    bool binSearch(vector<int> arr, int n, int target) {
+
+bool binSearch(vector<int> arr, int n, int target){
         int low = 0, high = n - 1, mid;
         while (low <= high) {
             mid = low + (high - low) / 2;
@@ -44,6 +43,5 @@ public:
         }
         return false;
     }
-};
 ```
 
