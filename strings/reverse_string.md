@@ -1,10 +1,5 @@
-# Problem
-Reverse Words in a String
-Solved
-Medium
-Topics
-premium lock icon
-Companies
+# Problem: Reverse Words in a String
+
 Given an input string s, reverse the order of the words.
 
 A word is defined as a sequence of non-space characters. The words in s will be separated by at least one space.
@@ -35,7 +30,7 @@ Simple logic and implementation.
 
 - skip spaces to get to one end of each word.
 - now skip characters to get to other end of that word.
-- now  extract the word using `str.substr(start, length)` function.
+- now extract the word using `str.substr(start, length)` function.
 - add the word to result string and add a space.
 - continue with next iteration after end of the word from original string.
 
