@@ -10,8 +10,9 @@ int main(){
     // for stack
     stack<int> st;
     st.push(0);
-    st.top();
+    cout << st.top();
     st.pop();
+    cout << st.top();
     st.size();
     st.empty();
 
@@ -20,8 +21,9 @@ int main(){
     // the element pushed first is popped first.
     queue<int> que;
     que.push(0);
+    cout << que.front();
     que.pop();
-    que.front();
+    cout << que.front();
     que.back();
     que.size();
     que.empty();

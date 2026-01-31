@@ -108,7 +108,38 @@ class myStack {
 
 # Implement stack using Queue
 ```cpp
+class MyStack {
+public:
+    // using 2 queues.
+    queue<int> q1, q2;
+    MyStack() {
+    }
+    
+    void push(int x) {
+        q1.push(x);
+    }
+    
+    int pop() {
+        while(q1.size() > 1){
+            q2.push(q1.front());
+            q1.pop();
+        }
+        int ans = q1.back();
+        q1.pop();
+        swap(q1, q2);
+        return ans;
+    }
+    
+    int top() {
+        return q1.back();
+    }
+    
+    bool empty() {
+        return q1.empty();
+    }
+};
 
 ```
 ---
+
 

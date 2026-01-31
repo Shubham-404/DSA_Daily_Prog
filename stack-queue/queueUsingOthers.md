@@ -124,5 +124,41 @@ class myQueue {
 ```cpp
 
 ```
+class MyQueue {
+public:
+    stack<int> st1, st2;
+    int front;
+    MyQueue() {}
+
+    void push(int x) {
+        if (st1.empty())
+            front = x;
+        st1.push(x);
+    }
+
+    int pop() {
+        while (st1.size() > 1) {
+            st2.push(st1.top());
+            st1.pop();
+        }
+        int popped = st1.top();
+        st1.pop();
+         if(!st2.empty()) front = st2.top();
+        while (!st2.empty()) {
+            st1.push(st2.top());
+            st2.pop();
+        }
+        return popped;
+    }
+
+    int peek() {
+        
+        if (!st1.empty())
+            return front;
+        return -1;
+    }
+
+    bool empty() { return st1.empty(); }
+};
 
 ---
