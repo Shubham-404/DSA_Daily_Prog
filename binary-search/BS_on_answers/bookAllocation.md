@@ -1,4 +1,5 @@
 # Allocate Minimum Pages
+## Same as split array largest sum
 Difficulty: MediumAccuracy: 35.51%Submissions: 359K+Points: 4Average Time: 35m
 Given an array arr[] of integers, where each element arr[i] represents the number of pages in the i-th book. You also have an integer k representing the number of students. The task is to allocate books to each student such that:
 
