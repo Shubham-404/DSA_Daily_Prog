@@ -33,5 +33,29 @@ The best way is to split it into [1,2,3] and [4,5], where the largest sum among 
 # More optimized, using BS
 
 ```cpp
-
+int splitArray(vector<int>& nums, int k) {
+        int n = nums.size();
+        if (k > n)
+            return -1;
+        int low = *max_element(nums.begin(), nums.end());
+        int high = accumulate(nums.begin(), nums.end(), 0);
+        while (low <= high) {
+            int mid = high - (high - low) / 2;
+            int studCount = 1, pageCount = 0;
+            for (int i = 0; i < n; i++) {
+                if (pageCount + nums[i] <= mid) {
+                    pageCount += nums[i];
+                } else {
+                    pageCount = nums[i];
+                    studCount++;
+                }
+            }
+            if (studCount > k) {
+                low = mid + 1;
+            } else {
+                high = mid - 1;
+            }
+        }
+        return low;
+    }
 ```
