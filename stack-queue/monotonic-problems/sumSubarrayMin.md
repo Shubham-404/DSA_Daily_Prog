@@ -33,13 +33,13 @@ int sumSubarrayMins(vector<int>& arr) {
     }
     return ans;
 }
+//*Gives TLE*
 ```
-*Gives TLE*
 
 
 Optimal using
-
+## NOT ABLE TO UNDERSTAND THE SOLUTION. A LITTLE COMPLICATED BRO.
 ```cpp
-
+//  ;|
 
 ```
